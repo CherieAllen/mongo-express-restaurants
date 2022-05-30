@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const url ='mongodb+srv://Cherie05:Password12@cluster0.tedtv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const url = process.env.MONGO_URL
 const options ={
     useNewUrlParser: true,
     useUnifiedTopology: true,
